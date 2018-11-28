@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Staff View</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<br><br>
+	<table class="table table-sm table-bordered table-hover m-0">
+		<tbody >
+		<tr >
+			<td width="4%"></td>
+			<td width="50%">Application for Fresh / Renewal</td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td >Name of the applicant</td>
+			<td  colspan="3"> colspan="2"</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td colspan="3">
+				Whether a company registered under Companies Act or a partnership firm or any other legal entity <br>(Article of partnership/ company to be attached)
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td> $row["rpa"]</td>
+			<td colspan="2">
+				<button >Show PDF</button>
+			</td>
+
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>Full Adress</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>E-mail ID</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Year(s) for which license is required</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="text-align: right;">From</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="text-align: right;">To</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr> 
+			<td >5</td>
+			<td colspan="3">Names of the Steamship Company / Charterer of Ships / Owner of Cargo with whom the contract for stevedoring their vessel / cargo subsists or is proposed to be entered <br>
+			(Proof of contract for the period covered is to be appended. The approximate tonnage for each party is to be indicated)</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<table class="table table-sm table-bordered table-hover m-0">
+		<tbody>
+			<tr class="text-center ">
+				<td width="4%"></td>
+				<th width="35%"> Name</th>
+				<th width="30%">Stramship Company/<br>Charterer of Ships/<br>Owner of cargo</th>
+				<th width="30%">Documents</th>
+			</tr>
+			<tr>
+			<td></td>
+			<td> $row["name5"]</td>
+			<td>  $row["sco"]</td>
+			<td>
+				<button >Show PDF</button> 
+			</td>
+		</tr>
+		</tbody>
+	</table>
+			
+	
+<table class="table table-sm table-bordered table-hover m-0">
+		<tbody>
+		<tr> 
+			<td width="4%">6</td>
+			<td colspan="3">Previous THREE years experience in the field of stevedoring</td>
+		<tr>
+		<tr class="text-center ">
+				<td></td>
+				<th> Year</th>
+				<th>Cargo</th>
+				<th>Tonnage</th>
+		</tr>
+		<tr>
+				<td></td>
+				<td> Year</td>
+				<td>Cargo</td>
+				<td>Tonnage</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<!-- 
+		<tr> 
+			<td >7</td>
+			<td colspan="3">Amount of financial ability to meet the obligation of wages, compensation under Workmen\'s Compensation Act, etc., as per clause 4(v)</td>
+		<tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<th>Pan certificate</th>
+				<td >button</td>
+
+		</tr>
+		<tr>
+			<td></td>
+			<th> Bank</th>
+			<th>Amount</th>
+			<th >Documents</th>
+		</tr>
+
+		<tr>
+				<td></td>
+				<td> Year</td>
+				<td>Cargo</td>
+				<td>Tonnage</td>
+		</tr>
+
+		
+		<tr> 
+			<td >8</td>
+			<td colspan="3">Whether the applicant has / is willing to acquire adequate gear for stevedoring the contracted vessel or cargo? 
+		</td>
+		</tr>
+		<tr>
+			<td></td>
+			<th> Gear </th>
+			<th>Have / Will Acquire</th>
+			<th >Documents</th>
+		</tr>
+		<tr>
+				<td></td>
+				<td> Year</td>
+				<td>Cargo</td>
+				<td>Tonnage</td>
+		</tr>
+		<tr> 
+			<td >9</td>
+			<td colspan="3">Whether the applicant has six supervisory staff with minimum 2 years experience and
+                    conversance with Rules and Regulations?
+            </td>
+        <tr>
+        <tr>
+        	<td class="text-right">(a)</td>
+        	<th> StaffName </th>
+        	<th>Experience</th>
+        	<th >Documents</th>
+        </tr>
+        <tr>
+				<td></td>
+				<td> Year</td>
+				<td>Cargo</td>
+				<td>Tonnage</td>
+		</tr>
+
+		<tr>
+			<td class="text-right">(b)</td>
+			<td width="70%">
+				In case of renewal indeminity bond attached 
+			</td>
+			<td> $row["bondAttached"]</td>
+			<td><button >Show PDF</button> </td> 
+		</tr> -->
+		<!-- <tr>
+			<td >10</td> 
+			<td width="20%">Whether the applicant has cleared
+				all dues, if any on account of transactions he had with the Port Trust?
+			</td> 
+			<td colspan="2"> '  . $row["due"] . ' </td>
+		</tr> -->
+<!-- 		<tr>
+			<td >11</td>
+			<td colspan="3">Whether the applicant has made the following deposits:-  </td>
+
+		</tr> -->
+
+	<br><br><br>
+</div>
+</body>
+</html>
